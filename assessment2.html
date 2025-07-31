@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: #f2f2f2;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .balance {
+      font-size: 2rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 0;
+      font-size: 1rem;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .deposit {
+      background-color: #4CAF50;
+    }
+
+    .deposit:hover {
+      background-color: #45a049;
+    }
+
+    .withdraw {
+      background-color: #f44336;
+    }
+
+    .withdraw:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="balance">$0</div>
+      <button class="btn deposit">Deposit</button>
+      <button class="btn withdraw">Withdraw</button>
+    </div>
+  </div>
+</body>
+</html>
